@@ -1,0 +1,111 @@
+.search{
+    position:absolute;
+    right:20px;
+    top:20px;
+    border-radius:5px 5px;
+    box-shadow: 1px 1px 5px black;
+    height:40px;
+}
+.search>form>input,
+.search>form>select{
+    height:40px;
+    border:none;
+    margin-right:10px;
+}
+.shops{
+    display:flex;
+    flex-wrap:wrap;
+}
+.card{
+    width:300px;
+    margin:10px;
+    border-radius:5px 5px;
+    box-shadow: 1px 1px 5px black;
+}
+.card>img{
+    width:100%;
+    border-radius:5px 5px 0 0;
+}
+.card_content{
+    padding:20px 20px 0 20px;
+}
+.card_tag{
+    display:flex;
+}
+.card_tag>p{
+    margin:10px 5px 20px 0;
+}
+.card_button{
+    display: flex;
+    justify-content: space-between;
+}
+.card_button>a{
+    background-color:#3366CC;
+    color:#FFFFFF;
+    border-radius:5px 5px;
+    padding:5px 20px;
+    height: 20px;
+    line-height: 20px;
+}
+
+/* ハート */
+.heart {
+    width: 50px;  /* 正方形を作る */
+    height: 50px; /* 正方形を作る */
+    position: relative;/* 基準位置とする */
+    border:none;
+    
+}
+.heart::before,
+.heart::after {
+    content: "";  /* 疑似要素に必須 */
+    width: 50%;   /* ハートの丸い部分の大きさにかかわる */
+    height: 80%;  /* ハートの高さにかかわる */
+    background: #E0548E; /* ハートの色 */
+    border-radius: 25px 25px 0 0; /* ハートの半円を生成 */
+    display: block; /* ブロック要素にする */
+    position: absolute; /* 相対位置に指定 */
+    top:-10px;
+    cursor: pointer;
+}
+.heart::before {
+    transform: rotate(-45deg); /* 左に回転 */
+    left: 14%;                 /* 左からの位置を指定 */
+}
+.heart::after {
+    transform: rotate(45deg);  /* 右に回転 */
+    right: 14%;                /* 右からの位置を指定 */
+}
+.heart.gray::before,
+.heart.gray::after{
+    background: #cacaca;
+}
+/* ハート終わり */
+
+/* レスポンシブデザイン */
+@media screen and (max-width:768px){
+    .shops{
+        display: flex;
+        flex-direction: column;
+        margin: 130px auto 20px;
+    }
+    .card{
+        width:100%;
+    }
+    .search{
+        top:70px;
+        left:20px;
+        box-shadow:none;
+    }
+    .search>form{
+        box-shadow: 1px 1px 5px black;
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .search>form>input{
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+}

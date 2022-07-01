@@ -1,0 +1,102 @@
+.update{
+    display:flex;
+    justify-content:space-around;
+}
+
+/* 詳細 */
+.update_detail{
+    width:45%;
+}
+.update_detail>div>h2{
+    line-height: 30px;
+}
+.update_detail>div:first-child{
+    display:flex;
+    margin:20px 0 20px 0;
+}
+.update_detail>div>a{
+    width:30px;
+    height:30px;
+    border-radius:5px 5px;
+    box-shadow: 1px 1px 5px black;
+    text-align:center;
+    color:black;
+    font-weight:bold;
+    line-height:30px;
+    margin-right:10px;
+}
+.update_detail>img{
+    width:100%;
+}
+.update_detail_tags{
+    display:flex;
+    margin:20px 0 20px 0;
+}
+/* 詳細終わり */
+
+
+/* 予約 */
+.update_reservation{
+    width:45%;
+    background-color: #3366CC;
+    position:relative;
+    border-radius:5px 5px;
+}
+.update_reservation>form>div>input{
+    height:25px;
+    border:none;
+    border-radius:5px 5px;
+    padding:0 10px;
+    margin:0 0 10px 20px;
+    cursor: pointer;
+}
+.update_reservation>form>div>select{
+    width:90%;
+    height:25px;
+    border:none;
+    border-radius:5px 5px;
+    padding:0 10px;
+    margin:0 0 10px 20px;
+    cursor: pointer;
+}
+.update_reservation_table{
+    width:80%;
+    background-color: #6699CC;
+    border-radius:5px 5px;
+    padding:10px;
+    color:#FFFFFF;
+    margin:0 0 10px 20px;
+}
+.update_reservation>form>button{
+    border:none;
+    width:100%;
+    height:30px;
+    background-color: #336699;
+    color:#FFFFFF;
+    position:absolute;
+    bottom:0;
+    cursor: pointer;
+    border-radius:0 0 5px 5px;
+}
+.update_reservation>h2,
+.update_reservation>form>h2{
+    margin:20px; 
+    color:#FFFFFF;
+}
+/* 予約終わり */
+
+/* レスポンシブデザイン */
+@media screen and (max-width:768px){
+    .update{
+        display:flex;
+        flex-direction: column;
+    }
+    .update_detail{
+        width:100%;
+    }
+    .update_reservation{
+        width:70%;
+        height:450px;
+        margin:20px auto;
+    }
+}

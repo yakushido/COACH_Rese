@@ -1,0 +1,75 @@
+h1{
+    text-align: center;
+    margin: 10px;
+}
+.admin >div{
+    width: 400px;
+    border-radius:5px 5px;
+    box-shadow: 1px 1px 5px black;
+    margin:0 auto;
+    padding: 20px;
+}
+.manager_list>h2{
+    text-align: center;
+    margin: 10px;
+}
+select,
+input{
+    height:25px;
+    border:none;
+    border-radius:5px 5px;
+    box-shadow: 1px 1px 5px black;
+    padding:0 10px;
+    margin:0 0 10px 20px;
+    cursor: pointer;
+}
+.button{
+    display: flex;
+    justify-content: end;
+}
+.button>button{
+    background-color: #336699;
+    color: #FFFFFF;
+    border:none;
+    border-radius:5px 5px;
+    padding:5px 20px;
+    cursor: pointer;
+}
+.manager_list_table{
+    margin: 0 auto;
+    border-collapse:collapse;
+}
+.manager_list_table th,
+.manager_list_table td{
+    border:1px solid #000066;
+    padding: 10px 20px;
+}
+.manager_list_table th{
+    background-color: #336699;
+    color: #FFFFFF;
+}
+
+.owner_list{
+    width:80%;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 5px 5px;
+    box-shadow: 1px 1px 5px black;
+    text-align: center;
+}
+.owner_list h2{
+    padding: 10px;
+    background-color: #336699;
+    color: #FFFFFF;
+}
+.owner_list_table{
+    margin: 10px auto;
+}
+.owner_list_table th{
+    border-top: 1px solid black;
+}
+.owner_list_table th,
+.owner_list_table td{
+    padding:5px ;
+    border-bottom: 1px solid black;
+}

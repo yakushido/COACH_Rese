@@ -1,0 +1,15 @@
+
+body{
+  padding: 20px;
+}
+header{
+  text-align: end;
+}
+.logout_button{
+  border: 1px solid #336699;
+  background-color: #FFFFFF;
+  color: #336699;
+  border-radius: 5px 5px;
+  padding: 10px;
+  cursor: pointer;
+}
