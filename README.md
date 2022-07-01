@@ -96,7 +96,7 @@
 - エリアで検索する
 - ジャンルで検索する
 - 店名で検索する
-- 管理画面
+- 管理画面(/admin/login)
 
   email: owner@example.com
   
