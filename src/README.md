@@ -57,7 +57,7 @@
 ## 3.使用画面のイメージ
 
 　店舗一覧ページ
-<img width="1440" alt="rese home" src="https://user-images.githubusercontent.com/98631346/175754773-0bb43b54-a746-4ac2-ba2c-10f962275f8c.png">
+<img width="1440" alt="rese home" src="https://user-images.githubusercontent.com/98631346/176901510-904e1d39-abd8-4d90-8563-2014bdc35425.png">
 
 ## 4.制作背景・目的
 
