@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Owner;
 use App\Models\Shop;
+use Illuminate\Support\Facades\Hash;
 
 class AdminController extends Controller
 {
@@ -26,7 +27,7 @@ class AdminController extends Controller
             'name' => $request->owner_name,
             'shop_id' => $request->shop_name,
             'email' => $request->email,
-            'password' => $request->password
+            'password' =>  Hash::make($request->password)
         ]);
         return redirect('/admin');
     }

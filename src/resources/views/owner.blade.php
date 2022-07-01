@@ -16,7 +16,7 @@
         <p>#{{ $myshop['shop']['genre']['name'] }}</p>
         </div>
         <div>
-            <form action="{{ route('owner.update')}}" method="POST">
+            <form action="{{ route('owner.update') }}" method="POST">
                 @csrf
                 <textarea name="detail" id="">{{ $myshop['shop']['detail'] }}</textarea>
                 <div class="update_button">

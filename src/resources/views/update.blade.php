@@ -60,7 +60,7 @@
                 </tr>
                 <tr>
                     <td>Date</td>
-                    <td>{{ $item['date']}}</td>
+                    <td>{{ $item['date'] }}</td>
                 </tr>
                 <tr>
                     <td>Time</td>

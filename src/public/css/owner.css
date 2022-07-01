@@ -58,3 +58,16 @@ h1{
 .shop_reservation_card td{
   padding: 5px;
 }
+
+@media screen and (max-width:768px){
+  .owner{
+    display: flex;
+    flex-direction: column;
+  }
+  .detail{
+    width:100%;
+  }
+  .shop_reservation{
+    margin: 0 auto;
+  }
+}

@@ -12,7 +12,7 @@
             <h2>{{ $shop['name'] }}</h2>
             
         </div>
-        <img src="{{ $shop->picture }}" alt="店舗画像">
+        <img src="{{ $shop['picture'] }}" alt="店舗画像">
         <div class="detail_tags">
             <p>#{{ $shop['area']['name'] }}</p>
             <p>#{{ $shop['genre']['name'] }}</p>
@@ -28,11 +28,11 @@
         @csrf
             <div>
                 @if($errors->has('date'))
-                    <p class="message">{{$errors -> first('date')}}</p>
+                    <p class="message">{{ $errors -> first('date') }}</p>
                 @endif
                 <input type="date" name="date">
                 @if($errors->has('time'))
-                    <p class="message">{{$errors -> first('time')}}</p>
+                    <p class="message">{{ $errors -> first('time') }}</p>
                 @endif
                 <select name="time" id="submit_time">
                     <option value="17:00">17:00</option>
@@ -43,7 +43,7 @@
                     <option value="22:00">22:00</option>
                 </select>
                 @if($errors->has('number'))
-                    <p class="message">{{$errors -> first('number')}}</p>
+                    <p class="message">{{ $errors -> first('number') }}</p>
                 @endif
                 <select name="number" id="submit_number">
                     <option value="1">1人</option>
@@ -67,7 +67,7 @@
                 </tr>
                 <tr>
                     <td>Date</td>
-                    <td>{{ $item['date']}}</td>
+                    <td>{{ $item['date'] }}</td>
                 </tr>
                 <tr>
                     <td>Time</td>

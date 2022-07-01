@@ -38,11 +38,11 @@
                     <p>#{{ $item['genre']['name'] }}</p>
                 </div>
                 <div class="card_button">  
-                <a href="{{ route('shops.detail', ['shop_id' => $item->id ]) }}">詳しく見る</a>
+                <a href="{{ route('shops.detail', ['shop_id' => $item->id]) }}">詳しく見る</a>
                 @if($item->is_liked_by_auth_user())
                     @foreach($favorites as $favorite)
                         @if( $favorite['shop_id'] === $item['id'] )  
-                            <form action="{{ route('favorite.delete', [ 'shop_id' => $item['id'] ]) }}" method="POST">
+                            <form action="{{ route('favorite.delete', ['shop_id' => $item['id']]) }}" method="POST">
                             @csrf
                                 <input type="hidden" name="shop_id" value="{{ $item->id }}">
                                 <button tupe="submit" class="heart"></button>
@@ -50,7 +50,7 @@
                         @endif
                     @endforeach
                 @else
-                    <form action="{{ route('favorite.add', [ 'shop_id' => $item['id'] ]) }}" method="POST">
+                    <form action="{{ route('favorite.add', ['shop_id' => $item['id']]) }}" method="POST">
                     @csrf
                         <input type="hidden" name="shop_id" value="{{ $item->id }}">
                         <button tupe="submit" class="heart gray"></button>

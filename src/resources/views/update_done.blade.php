@@ -7,7 +7,7 @@
 @endif
 <div class="done">
     <div>
-        <h2>ご予約の変更ありがとうございます。</h2>
+        <h2>ご予約の変更を承りました。</h2>
         <button type="button"><a href="{{ route('home') }}">戻る</a></button>
     </div>
 </div>

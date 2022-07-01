@@ -37,6 +37,7 @@
     border:none;
     padding:5px 20px;
     margin-left: 70%;
+    cursor: pointer;
 }
 .message{
     margin: 5px 0 5px 25px;
