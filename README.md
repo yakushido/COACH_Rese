@@ -2,6 +2,7 @@
 
 ## 1.概要
 - ある企業のグループ会社の飲食店予約サービス。
+- サイトURL: https://flannel-moose-81696.herokuapp.com/
 
 ## 2.環境構築手順
 
