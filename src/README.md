@@ -7,39 +7,51 @@
 
 1.GitHubよりダウンロード
 
- $　git clone https://github.com/yakushido/COACH_Rese.git
+ - $　git clone https://github.com/yakushido/COACH_Rese.git
 
 2.Dockerのコンテナを作成、起動
 
- $ docker compose up -d --build
+ - $ docker compose up -d --build
   
 4..envファイルの書き換え
- $ docker-compose exec app bash
- $ cp .env.example .env
-  - .env内の下記項目を次に書き換え
+
+ - $ docker-compose exec app bash
+ - $ cp .env.example .env
+ - .env内の下記項目を次に書き換え
+
     DB_CONNECTION=mysql
+    
     DB_HOST=db
+    
     DB_PORT=3306
+    
     DB_DATABASE=laravel
+    
     DB_USERNAME=yaku
+    
     DB_PASSWORD=yaku
 
 5.storage 以下に書き込み権限を付ける
- $ chmod 777 -Rf storage
+
+ - $ chmod 777 -Rf storage
 
 6.APP_KEYの生成
- $ php artisan key:generate
+
+ - $ php artisan key:generate
 
 7.マイグレーションの実行
 
- $ docker-compose exec app bash
- $ php artisan migrate
+ - $ docker-compose exec app bash
+
+ - $ php artisan migrate
 
 8.シーダーの実行
- $ php artisan db:seed
+
+ - $ php artisan db:seed
 
 9.シンボリックリンクを設定する
- $ php artisan storage:link
+
+ - $ php artisan storage:link
 
 
 ## 3.使用画面のイメージ
@@ -48,6 +60,7 @@
 <img width="1440" alt="rese home" src="https://user-images.githubusercontent.com/98631346/175754773-0bb43b54-a746-4ac2-ba2c-10f962275f8c.png">
 
 ## 4.制作背景・目的
+
 - 外部の飲食店予約サービスは手数料を取られるので自社で予約サービスを持ちたい。
 
 ## 5.使用技術、バージョン
@@ -83,5 +96,7 @@
 - ジャンルで検索する
 - 店名で検索する
 - 管理画面
-  --email: owner@example.com
-  --password: owner@example.comで管理者ページに入れます
+
+  email: owner@example.com
+  
+  password: owner@example.comで管理者ページに入れます
