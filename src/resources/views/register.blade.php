@@ -13,14 +13,14 @@
             <p class="message">{{ $errors -> first('name') }}</p>
         @endif
         <div>
-            <img src="{{ asset('storage/user.png') }}" alt="ユーザーのアイコン">
+            <img src="/storage/user.png" alt="ユーザーのアイコン">
             <input type="text" name="name">
         </div>
         @if($errors->has('email'))
             <p class="message">{{ $errors -> first('email') }}</p>
         @endif
         <div>
-            <img src="{{ asset('storage/mail.png') }}" alt="メールのアイコン">
+            <img src="/storage/mail.png" alt="メールのアイコン">
             <input type="email" name="email">
         </div>
         @if($errors->has('password'))
@@ -28,7 +28,7 @@
         @endif
         <div>
             
-            <img src="{{ asset('storage/lock.png') }}" alt="パスワードのアイコン">
+            <img src="/storage/lock.png" alt="パスワードのアイコン">
             <input type="password" name="password" id="password" value=""  onKeyUp="copy()">
         </div>
         

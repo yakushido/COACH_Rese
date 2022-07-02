@@ -17,11 +17,11 @@
     <form action="/login" method="post">
     @csrf
         <div>
-            <img src="{{ asset('storage/mail.png') }}" alt="メールのアイコン">
+            <img src="/storage/mail.png" alt="メールのアイコン">
             <input type="email" name="email">
         </div>
         <div>
-        <img src="{{ asset('storage/lock.png') }}" alt="パスワードのアイコン">
+        <img src="/storage/lock.png" alt="パスワードのアイコン">
             <input type="password" name="password">
         </div>
         <button type="submit">ログイン</button>
